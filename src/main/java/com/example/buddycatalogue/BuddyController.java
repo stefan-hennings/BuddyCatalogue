@@ -12,7 +12,8 @@ public class BuddyController {
     BuddyDAO patrik = new BuddyDAO(3, "Patrik", "663");
     BuddyDAO oscar = new BuddyDAO(4, "Oscar", "1247");
     BuddyDAO elias = new BuddyDAO(5, "Elias", "1616");
-    List<BuddyDAO> allBuddies = new ArrayList<>(List.of(daniel, julia, patrik, oscar, elias));
+    BuddyDAO ivo = new BuddyDAO(6, "T-blade", "9999");
+    List<BuddyDAO> allBuddies = new ArrayList<>(List.of(daniel, julia, patrik, oscar, elias, ivo));
     
     @RequestMapping("/buddy/all")
     public List<BuddyDAO> getAllBuddies() {
